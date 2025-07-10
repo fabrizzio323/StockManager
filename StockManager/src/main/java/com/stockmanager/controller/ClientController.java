@@ -17,7 +17,7 @@ public class ClientController {
     @Autowired
     private ClienteService service;
 
-    @GetMapping
+    @GetMapping("/")
     public ResponseEntity<?> getAllClients() {
         try {
             List<ClientDTO> clients = service.listAllClients();
@@ -37,7 +37,7 @@ public class ClientController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<?> createClient(@RequestBody ClientDTO clientDTO) {
         try {
             service.createClient(clientDTO);

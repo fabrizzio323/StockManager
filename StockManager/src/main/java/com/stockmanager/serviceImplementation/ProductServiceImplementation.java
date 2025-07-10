@@ -48,6 +48,7 @@ public class ProductServiceImplementation implements ProductoService {
         try{
             Product newProduct = productMapper.toProduct(productDTO);
             if(!nameExists(newProduct.getName())){
+                 newProduct.setStatus(true);
                 repository.save(newProduct);
             }else{
                 throw new CustomException("Product with name " + newProduct.getName() + " already exists.");

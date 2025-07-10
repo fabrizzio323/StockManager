@@ -1,6 +1,6 @@
 package com.stockmanager.dto;
 
-import java.math.BigDecimal;
+
 
 public class ProductDTO {
     private Long id;
@@ -8,6 +8,7 @@ public class ProductDTO {
     private String description;
     private double price;
     private int stock;
+    private boolean status;
 
     public Long getId() {
         return id;
@@ -39,6 +40,12 @@ public class ProductDTO {
     public void setStock(int stock) {
         this.stock = stock;
     }
-
+    
+    public boolean isStatus() {
+        return status;
+    }
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 
 }

@@ -16,6 +16,7 @@ public interface ClientMapper {
     @Mapping(source="name", target="name")
     @Mapping(source="last_name", target="last_name")
     @Mapping(source="email",target="email")
+    @Mapping(source="status",target="status")
     ClientDTO toClientDTO(Client client);
 
     @InheritConfiguration

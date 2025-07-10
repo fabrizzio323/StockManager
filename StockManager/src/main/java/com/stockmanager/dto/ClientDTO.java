@@ -7,7 +7,7 @@ public class ClientDTO {
     private String name;
     private String last_name;
     private String email;
-
+    private boolean status;
 
     public Long getId() {
         return id;
@@ -32,5 +32,11 @@ public class ClientDTO {
     }
     public void setEmail(String email) {
         this.email = email;
+    }
+    public boolean isStatus() {
+        return status;
+    }
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }
