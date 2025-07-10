@@ -19,6 +19,7 @@ public class Client {
     private String email;
     private boolean status;
 
+
     public Long getId() {
         return id;
     }
